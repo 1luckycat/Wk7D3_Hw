@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(to right, yellow, red);
+
+}
+
+#submit-button {
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    border-color: grey;
+}
