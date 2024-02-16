@@ -31,17 +31,8 @@ const DOMElements = {
 };
 
 const createList = (position, name, nationality, sponsor, points) => { 
-    const html = `<div id=${position} class='table mt-3 mb-3' style="width: 18rem;">
+    const html = `<div id=${position} class='table'>
     <table class="table table-dark">
-        <thead>
-            <tr>
-            <th scope="col">Position</th>
-            <th scope="col">Name</th>
-            <th scope="col">Nationality</th>
-            <th scope="col">Sponsor</th>
-            <th scope="col">Points</th>
-            </tr>
-        </thead>
         <tbody>
             <tr>
             <th scope="row">${position}</th>
@@ -63,3 +54,33 @@ const loadData = async () => {
     });
 };
 
+
+
+
+
+// OLD CODE THAT GAVE RESULTS IN DIFFERENT TABLES:
+
+// const createList = (position, name, nationality, sponsor, points) => { 
+//     const html = `<div id=${position} class='table mt-3 mb-3' style="width: 18rem;">
+//     <table class="table table-dark">
+//         <thead>
+//             <tr>
+//             <th scope="col">Position</th>
+//             <th scope="col">Name</th>
+//             <th scope="col">Nationality</th>
+//             <th scope="col">Sponsor</th>
+//             <th scope="col">Points</th>
+//             </tr>
+//         </thead>
+//         <tbody>
+//             <tr>
+//             <th scope="row">${position}</th>
+//             <td>${name}</td>
+//             <td>${nationality}</td>
+//             <td>${sponsor}</td>
+//             <td>${points}</td>
+//             </tr>
+//         </tbody>
+//     </div>`;
+//     document.querySelector(DOMElements['racecars']).insertAdjacentHTML('beforeend', html);
+// };
