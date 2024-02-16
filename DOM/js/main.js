@@ -63,11 +63,3 @@ const loadData = async () => {
     });
 };
 
-
-{/* <ul class='list-group list-group-flush' id=${name}>
-    <li class='list-group-item'>${position}</li>
-    <li class='list-group-item'>${name}</li>
-    <li class='list-group-item'>${nationality}</li>
-    <li class='list-group-item'>${sponsor}</li>
-    <li class='list-group-item'>${points}</li>
-</ul> */}
